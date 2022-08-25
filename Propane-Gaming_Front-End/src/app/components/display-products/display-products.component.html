@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div  class="error"><error-display></error-display></div>
+<div class="container">
+  <div class="row align-items-start">
+    <div
+      class="col d-flex justify-content-center"
+      *ngFor="let product of allProducts"
+    >
+      <app-product-card
+        class="cardListItem"
+        [productInfo]="product"
+      ></app-product-card>
+    </div>
+  </div>
+</div>

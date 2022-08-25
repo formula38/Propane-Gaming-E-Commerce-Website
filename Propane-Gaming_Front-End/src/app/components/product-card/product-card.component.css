@@ -1,0 +1,91 @@
+.card {
+  size: auto;
+  max-width: 300px;
+  min-width: 200px;
+  min-height: 360px;
+  max-height: 470px;
+  transition: 0.1s ease-out;
+  background-color: #303e5a;
+  color: white;
+  border-radius: 15px;
+}
+
+.card-top {
+  width: 100%;
+}
+
+#cartCounter {
+  color: #faa229;
+  width: 115px;
+  height: 22px;
+}
+
+.card-body {
+  padding-bottom: 0px;
+  flex: 0;
+  padding-top: 15px;
+}
+
+img {
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 25px;
+  left: 0;
+  margin-bottom: 10px;
+}
+
+div {
+  position: relative;
+  transition: 0.2s ease-out;
+}
+
+.card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, -10px, 0);
+}
+
+.btn {
+  background-color: #faa229;
+  color: #15213c;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 25px;
+  margin-bottom: 0px;
+}
+.btn_grey {
+  background-color: #ababab;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 25px;
+  margin-bottom: 0px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.card-body.bottom {
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.card-body.bottom h5 {
+  padding-right: 15px;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 18;
+  height: 68px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+input {
+  max-width: 100px;
+}

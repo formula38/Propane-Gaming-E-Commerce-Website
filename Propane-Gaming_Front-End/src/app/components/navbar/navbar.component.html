@@ -1,0 +1,47 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <div class="box">
+    <a [routerLink]="['/home']" class="navbar-brand" (click)="refresh()">
+      <img src="../../../assets/images/pg-logo.svg" alt="Propane Gaming" />
+    </a>
+  </div>
+  <div class="box">
+    <div class="search-container">
+      <app-search-bar></app-search-bar>
+    </div>
+  </div>
+  <div class="box">
+    <form class="form-inline">
+      <button
+        class="navBut btn btn-light"
+        [ngClass]="isCurrentLocation('/wishlist') ? ' active-btn' : ''"
+        [routerLink]="['/wishlist']"
+      >
+        Wishlist
+      </button>
+      <button
+        class="navBut btn btn-light"
+        [ngClass]="isCurrentLocation('/user-profile') ? ' active-btn' : ''"
+        [routerLink]="['/user-profile']"
+      >
+        <div class="icon-style user-icon"></div>
+      </button>
+      <button
+        class="navBut btn btn-light"
+        [ngClass]="isCurrentLocation('/cart') ? ' active-btn' : ''"
+        [routerLink]="['/cart']"
+      >
+        <div class="icon-style cart-icon"></div>
+      </button>
+
+      <button
+        *ngIf="userLoggedIn"
+        class="navBut btn btn-light"
+        (click)="logout()"
+      >
+        <div class="icon-style exit-icon"></div>
+      </button>
+    </form>
+  </div>
+  </div>
+</nav>

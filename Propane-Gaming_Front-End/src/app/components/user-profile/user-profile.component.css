@@ -1,0 +1,135 @@
+h1{
+    color:azure;
+    text-align: center;
+}
+p{
+    color: #14213d;
+    font-size: large;
+
+}
+.allContent {
+    display: table;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+
+input .ng-invalid{
+    border-left: 5px solid red;
+}
+
+input .ng-valid{
+    border-left: 5px solid greenyellow;
+}
+
+.error{
+    color: red;
+}
+
+.Infofor,
+.userInformation {
+    display: inline-block;
+    flex: 25 25 25px;
+    padding: 10px;
+    max-width: 400px;
+    background-color:  #E5E5E5;
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.userInformation{
+    padding-inline: 2em;
+}
+
+.userInformation p {
+    margin-top: 15px;
+    margin-bottom: -3px;
+}
+
+.Infofor {
+    text-align: center;
+}
+
+#user-container{
+    float: right;
+    margin-left: 50px;
+}
+
+.btn-back,
+.uBtn,
+.btnF,
+.btn-order {
+    background-color: #fca311;
+    border: #e5e5e5;
+    border-radius: 150px;
+    color: #14213d;
+    font-size: 1em;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.uBtn {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 15px;
+}
+
+
+.btnF {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
+}
+
+.allDem {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.spoiler{ 
+    color: black; 
+    background-color:black;
+  }
+  
+.spoiler:hover{
+    color: white;
+}
+
+#historybtn{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#redFirst,
+#redlast,
+#redEmail1,
+#redEmail2,
+#redUsername,
+#redPassword1,
+#redPassword2 {
+    margin-left: 0px;
+}
+  
+.icon-style,
+.user-icon {
+  width: 100px;
+  height: 100px;
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #14213d;
+  -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.user-icon {
+    mask-image: url("/assets/icons/user-login-icon.svg");
+  }

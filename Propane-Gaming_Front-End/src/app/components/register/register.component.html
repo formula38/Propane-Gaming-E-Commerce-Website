@@ -1,0 +1,28 @@
+<img src="../../../assets/images/pg-logo.svg" width="30%" height="30%" alt="Revature" [routerLink]="['/home']">
+<error-display></error-display>
+<form ngNativeValidate id="register-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="inputUserName">Username</label>
+      <input required (change)="trimInput($event)" type="text" class="form-control" formControlName="uname" id="inputUserName" placeholder="Enter Username">
+    </div>
+    <div class="form-group">
+      <label for="inputFirst">First Name</label>
+      <input required (change)="trimInput($event)" type="text" class="form-control" formControlName="fname" id="inputFirst" placeholder="Enter First Name">
+    </div>
+    <div class="form-group">
+      <label for="inputLastName">Last Name</label>
+      <input required (change)="trimInput($event)" type="text" class="form-control" formControlName="lname" id="inputLastName" placeholder="Enter Last Name">
+    </div>
+    <div class="form-group">
+      <label for="inputEmail">Email Address</label>
+      <input required (change)="trimInput($event)" type="email" class="form-control" formControlName="email" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+      <small id="emailHelp" class="form-text text-muted">Ensure you enter the correct email</small>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Password</label>
+      <input (change)="trimInput($event)" type="password" class="form-control" formControlName="password" id="inputPassword" placeholder="Enter Password" pattern=".{6,}" required>
+    </div>
+    <input (click)="checkValid()" type="submit" class="btn btn-back" value="Register">
+    <button class="btn btn-back" [routerLink]="['/login']">Already a User? Sign In</button>
+</form>
+
